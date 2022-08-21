@@ -27,7 +27,7 @@ export default function App() {
         setValue(res.data)
       });        
     }
-  }, [value]);
+  }, [value, isinit]);
 
   const increment = () => {
     console.log ("Increment Click");
