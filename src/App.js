@@ -12,8 +12,8 @@ export default function App() {
     })
     .then((res) => res.json())
     .then((res) => {
-      setValue(res.data)
       setInit(true);
+      setValue(res.data)
     })
   }, []);
 
