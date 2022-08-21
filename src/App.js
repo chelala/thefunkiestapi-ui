@@ -4,7 +4,7 @@ import "./index.css";
 
 export default function App() {
   const [value, setValue] = useState();
-  const [isInit, setInit] = useState();
+  const [isinit, setInit] = useState();
 
   useEffect(() => {
     fetch("https://thefunkiestapiv999.azurewebsites.net/api/getscore?name=Harold", {
@@ -18,7 +18,7 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    if (isInit === true) {
+    if (isinit === true) {
       fetch("https://thefunkiestapiv999.azurewebsites.net/api/updatescore?name=Harold", {
         method: "GET"
       })
